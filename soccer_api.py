@@ -1,4 +1,5 @@
 import requests
+from Player import Player
 
 # Replace Here if u want to use a different key
 api_key = 'ad24ab0e4af27534f6451c76bbd7f140'
@@ -33,43 +34,64 @@ def call_api(endpoint, params=None):
 # It then parses the top 20 players information, adds it to an organized dictionary and appends 
 # each dictionary to a list of player dictionaries, returns said list.
 
-def get_top_players(league_id, season=2022):
+def get_top_players(league_id, season=2022, league_name = "Unknown"):
     
-    # Fetch players for the given league and season (first page)
     players_data = call_api('players/topscorers', {'league': league_id, 'season': season})
     
     # Extract player information from the response
     players = players_data.get('response', [])
     
+    # Refer to sample response below for information access logic
     top_players = []
     
-    # Refer to sample response below for information access logic
     for player in players:
-        player_info = {
-            'name': player['player']['name'],
-            'team': player['statistics'][0]['games']['position'],
-            'position': player['statistics'][0]['games']['position'],
-            'image': player['player']['photo'], 
-            'nationality': player['player']['nationality'],
-            'goals': player['statistics'][0]['goals']['total'],
-            'assists': player['statistics'][0]['goals']['assists'],
-            'age' : player['player']['age']
-        }
+        player_obj = Player(
+            name=player['player']['name'],
+            team=player['statistics'][0]['team']['name'], 
+            position=player['statistics'][0]['games']['position'], 
+            image=player['player']['photo'],
+            nationality=player['player']['nationality'],
+            goals=player['statistics'][0]['goals']['total'],
+            assists=player['statistics'][0]['goals']['assists'],
+            age=player['player']['age'],
+            league=league_name
+        )
         
-        # Append to the list
-        top_players.append(player_info)
-    
+        top_players.append(player_obj)
+        
     return top_players
 
-# Function for compiling results from a dictionary of league_id's     
+# Function for compiling results from a dictionary of league_id's  
+# Because of how the information is organized I am assigning each player's league with this function
+   
 def get_all_league_players(league_ids):
     all_league_players = {}
 
     for league_name, league_id in league_ids.items():
-        players = get_top_players(league_id)
+        players = get_top_players(league_id,league_name=league_name)
         all_league_players[league_name] = players
     
     return all_league_players
+
+# Function to write player information to a text file
+def write_players_to_file(all_league_players):
+    
+    with open('top_players.txt', 'w') as file:
+        for league_name, players in all_league_players.items():
+            file.write(f"\nTop Players for {league_name}:\n")
+            file.write("=" * 40 + "\n")
+            
+            for player in players:
+                file.write(f"Name: {player.name}\n")
+                file.write(f"Team: {player.team}\n")
+                file.write(f"Position: {player.position}\n")
+                file.write(f"Goals: {player.goals}\n")
+                file.write(f"Assists: {player.assists}\n")
+                file.write(f"Age: {player.age}\n")
+                file.write(f"Nationality: {player.nationality}\n")
+                file.write(f"League: {player.league}\n")
+                file.write(f"Image: {player.image}\n")
+                file.write("-" * 40 + "\n")
 
 # Id's gathered through dashboard https://dashboard.api-football.com/soccer/ids
 league_ids = {
@@ -87,25 +109,7 @@ league_ids = {
 #
 all_league_players = get_all_league_players(league_ids)
 
-#Writing information to file for outputput checking
-with open('top_players.txt', 'w') as file:
-
-    # Loop through all the leagues and their respective players
-    for league_name, players in all_league_players.items():
-        file.write(f"\nTop Players for {league_name}:\n")
-        file.write("=" * 40 + "\n")
-        for player in players:
-            file.write(f"Name: {player['name']}\n")
-            file.write(f"Team: {player['team']}\n")
-            file.write(f"Position: {player['position']}\n")
-            file.write(f"Goals: {player['goals']}\n")
-            file.write(f"Assists: {player['assists']}\n")
-            file.write(f"Age: {player['age']}\n")
-            file.write(f"Nationality: {player['nationality']}\n")
-            file.write(f"Image: {player['image']}\n")
-            file.write("-" * 40 + "\n")  
-
-print("Player data has been written to top_players.txt")
+write_players_to_file(all_league_players)
     
     
     

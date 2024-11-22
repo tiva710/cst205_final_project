@@ -2,914 +2,1014 @@
 Top Players for English Premier League:
 ========================================
 Name: E. Haaland
-Team: Attacker
+Team: Manchester City
 Position: Attacker
 Goals: 36
 Assists: 8
 Age: 24
 Nationality: Norway
+League: English Premier League
 Image: https://media.api-sports.io/football/players/1100.png
 ----------------------------------------
 Name: H. Kane
-Team: Attacker
+Team: Tottenham
 Position: Attacker
 Goals: 30
 Assists: 3
 Age: 31
 Nationality: England
+League: English Premier League
 Image: https://media.api-sports.io/football/players/184.png
 ----------------------------------------
 Name: I. Toney
-Team: Attacker
+Team: Brentford
 Position: Attacker
 Goals: 20
 Assists: 4
 Age: 28
 Nationality: England
+League: English Premier League
 Image: https://media.api-sports.io/football/players/19974.png
 ----------------------------------------
 Name: Mohamed Salah
-Team: Attacker
+Team: Liverpool
 Position: Attacker
 Goals: 19
 Assists: 12
 Age: 32
 Nationality: Egypt
+League: English Premier League
 Image: https://media.api-sports.io/football/players/306.png
 ----------------------------------------
 Name: C. Wilson
-Team: Attacker
+Team: Newcastle
 Position: Attacker
 Goals: 18
 Assists: 5
 Age: 32
 Nationality: England
+League: English Premier League
 Image: https://media.api-sports.io/football/players/2939.png
 ----------------------------------------
 Name: M. Rashford
-Team: Attacker
+Team: Manchester United
 Position: Attacker
 Goals: 17
 Assists: 5
 Age: 27
 Nationality: England
+League: English Premier League
 Image: https://media.api-sports.io/football/players/909.png
 ----------------------------------------
 Name: M. Ødegaard
-Team: Midfielder
+Team: Arsenal
 Position: Midfielder
 Goals: 15
 Assists: 7
 Age: 26
 Nationality: Norway
+League: English Premier League
 Image: https://media.api-sports.io/football/players/37127.png
 ----------------------------------------
 Name: Gabriel Martinelli
-Team: Attacker
+Team: Arsenal
 Position: Attacker
 Goals: 15
 Assists: 5
 Age: 23
 Nationality: Brazil
+League: English Premier League
 Image: https://media.api-sports.io/football/players/127769.png
 ----------------------------------------
 Name: O. Watkins
-Team: Attacker
+Team: Aston Villa
 Position: Attacker
 Goals: 15
 Assists: 6
 Age: 29
 Nationality: England
+League: English Premier League
 Image: https://media.api-sports.io/football/players/19366.png
 ----------------------------------------
 Name: B. Saka
-Team: Attacker
+Team: Arsenal
 Position: Attacker
 Goals: 14
 Assists: 11
 Age: 23
 Nationality: England
+League: English Premier League
 Image: https://media.api-sports.io/football/players/1460.png
 ----------------------------------------
 Name: A. Mitrović
-Team: Attacker
+Team: Fulham
 Position: Attacker
 Goals: 14
 Assists: 1
 Age: 30
 Nationality: Serbia
+League: English Premier League
 Image: https://media.api-sports.io/football/players/2825.png
 ----------------------------------------
 Name: H. Barnes
-Team: Midfielder
+Team: Leicester
 Position: Midfielder
 Goals: 13
 Assists: 1
 Age: 27
 Nationality: England
+League: English Premier League
 Image: https://media.api-sports.io/football/players/18778.png
 ----------------------------------------
 Name: Rodrigo
-Team: Attacker
+Team: Leeds
 Position: Attacker
 Goals: 13
 Assists: 1
 Age: 33
 Nationality: Spain
+League: English Premier League
 Image: https://media.api-sports.io/football/players/935.png
 ----------------------------------------
 Name: P. Foden
-Team: Midfielder
+Team: Manchester City
 Position: Midfielder
 Goals: 11
 Assists: 5
 Age: 24
 Nationality: England
+League: English Premier League
 Image: https://media.api-sports.io/football/players/631.png
 ----------------------------------------
 Name: Roberto Firmino
-Team: Attacker
+Team: Liverpool
 Position: Attacker
 Goals: 11
 Assists: 4
 Age: 33
 Nationality: Brazil
+League: English Premier League
 Image: https://media.api-sports.io/football/players/302.png
 ----------------------------------------
 Name: M. Almirón
-Team: Midfielder
+Team: Newcastle
 Position: Midfielder
 Goals: 11
 Assists: 2
 Age: 30
 Nationality: Paraguay
+League: English Premier League
 Image: https://media.api-sports.io/football/players/2507.png
 ----------------------------------------
 Name: Gabriel Jesus
-Team: Attacker
+Team: Arsenal
 Position: Attacker
 Goals: 11
 Assists: 6
 Age: 27
 Nationality: Brazil
+League: English Premier League
 Image: https://media.api-sports.io/football/players/643.png
 ----------------------------------------
 Name: Son Heung-Min
-Team: Attacker
+Team: Tottenham
 Position: Attacker
 Goals: 10
 Assists: 6
 Age: 32
 Nationality: Korea Republic
+League: English Premier League
 Image: https://media.api-sports.io/football/players/186.png
 ----------------------------------------
 Name: T. Awoniyi
-Team: Attacker
+Team: Nottingham Forest
 Position: Attacker
 Goals: 10
 Assists: 1
 Age: 27
 Nationality: Nigeria
+League: English Premier League
 Image: https://media.api-sports.io/football/players/8598.png
 ----------------------------------------
 Name: J. Maddison
-Team: Midfielder
+Team: Leicester
 Position: Midfielder
 Goals: 10
 Assists: 9
 Age: 28
 Nationality: England
+League: English Premier League
 Image: https://media.api-sports.io/football/players/18784.png
 ----------------------------------------
 
 Top Players for La Liga:
 ========================================
 Name: R. Lewandowski
-Team: Attacker
+Team: Barcelona
 Position: Attacker
 Goals: 23
 Assists: 7
 Age: 36
 Nationality: Poland
+League: La Liga
 Image: https://media.api-sports.io/football/players/521.png
 ----------------------------------------
 Name: K. Benzema
-Team: Attacker
+Team: Real Madrid
 Position: Attacker
 Goals: 19
 Assists: 3
 Age: 37
 Nationality: France
+League: La Liga
 Image: https://media.api-sports.io/football/players/759.png
 ----------------------------------------
 Name: Joselu
-Team: Attacker
+Team: Espanyol
 Position: Attacker
 Goals: 16
 Assists: 2
 Age: 34
 Nationality: Spain
+League: La Liga
 Image: https://media.api-sports.io/football/players/18907.png
 ----------------------------------------
 Name: A. Griezmann
-Team: Attacker
+Team: Atletico Madrid
 Position: Attacker
 Goals: 15
 Assists: 16
 Age: 33
 Nationality: France
+League: La Liga
 Image: https://media.api-sports.io/football/players/56.png
 ----------------------------------------
 Name: V. Muriqi
-Team: Attacker
+Team: Mallorca
 Position: Attacker
 Goals: 15
 Assists: 3
 Age: 30
 Nationality: Kosovo
+League: La Liga
 Image: https://media.api-sports.io/football/players/50048.png
 ----------------------------------------
 Name: Borja Iglesias
-Team: Attacker
+Team: Real Betis
 Position: Attacker
 Goals: 15
 Assists: 3
 Age: 31
 Nationality: Spain
+League: La Liga
 Image: https://media.api-sports.io/football/players/47348.png
 ----------------------------------------
 Name: E. Ünal
-Team: Attacker
+Team: Getafe
 Position: Attacker
 Goals: 14
 Assists: 3
 Age: 27
 Nationality: Türkiye
+League: La Liga
 Image: https://media.api-sports.io/football/players/47499.png
 ----------------------------------------
 Name: Álvaro Morata
-Team: Attacker
+Team: Atletico Madrid
 Position: Attacker
 Goals: 13
 Assists: 2
 Age: 32
 Nationality: Spain
+League: La Liga
 Image: https://media.api-sports.io/football/players/59.png
 ----------------------------------------
 Name: V. Castellanos
-Team: Attacker
+Team: Girona
 Position: Attacker
 Goals: 13
 Assists: None
 Age: 26
 Nationality: Argentina
+League: La Liga
 Image: https://media.api-sports.io/football/players/50856.png
 ----------------------------------------
 Name: N. Jackson
-Team: Attacker
+Team: Villarreal
 Position: Attacker
 Goals: 12
 Assists: 4
 Age: 23
 Nationality: Senegal
+League: La Liga
 Image: https://media.api-sports.io/football/players/283058.png
 ----------------------------------------
 Name: A. Sørloth
-Team: Attacker
+Team: Real Sociedad
 Position: Attacker
 Goals: 12
 Assists: 3
 Age: 29
 Nationality: Norway
+League: La Liga
 Image: https://media.api-sports.io/football/players/8492.png
 ----------------------------------------
 Name: Iago Aspas
-Team: Attacker
+Team: Celta Vigo
 Position: Attacker
 Goals: 12
 Assists: 3
 Age: 37
 Nationality: Spain
+League: La Liga
 Image: https://media.api-sports.io/football/players/47445.png
 ----------------------------------------
 Name: Gabri Veiga
-Team: Midfielder
+Team: Celta Vigo
 Position: Midfielder
 Goals: 11
 Assists: 4
 Age: 22
 Nationality: Spain
+League: La Liga
 Image: https://media.api-sports.io/football/players/182504.png
 ----------------------------------------
 Name: Vinícius Júnior
-Team: Attacker
+Team: Real Madrid
 Position: Attacker
 Goals: 10
 Assists: 9
 Age: 24
 Nationality: Brazil
+League: La Liga
 Image: https://media.api-sports.io/football/players/762.png
 ----------------------------------------
 Name: M. Braithwaite
-Team: Attacker
+Team: Espanyol
 Position: Attacker
 Goals: 10
 Assists: 2
 Age: 33
 Nationality: Denmark
+League: La Liga
 Image: https://media.api-sports.io/football/players/2737.png
 ----------------------------------------
 Name: I. Williams
-Team: Attacker
+Team: Athletic Club
 Position: Attacker
 Goals: 10
 Assists: 3
 Age: 30
 Nationality: Ghana
+League: La Liga
 Image: https://media.api-sports.io/football/players/47294.png
 ----------------------------------------
 Name: Oihan Sancet
-Team: Midfielder
+Team: Athletic Club
 Position: Midfielder
 Goals: 10
 Assists: 2
 Age: 24
 Nationality: Spain
+League: La Liga
 Image: https://media.api-sports.io/football/players/128398.png
 ----------------------------------------
 Name: Marco Asensio
-Team: Attacker
+Team: Real Madrid
 Position: Attacker
 Goals: 9
 Assists: 6
 Age: 28
 Nationality: Spain
+League: La Liga
 Image: https://media.api-sports.io/football/players/746.png
 ----------------------------------------
 Name: T. Kubo
-Team: Attacker
+Team: Real Sociedad
 Position: Attacker
 Goals: 9
 Assists: 4
 Age: 23
 Nationality: Japan
+League: La Liga
 Image: https://media.api-sports.io/football/players/32862.png
 ----------------------------------------
 Name: Á. Correa
-Team: Attacker
+Team: Atletico Madrid
 Position: Attacker
 Goals: 9
 Assists: 1
 Age: 29
 Nationality: Argentina
+League: La Liga
 Image: https://media.api-sports.io/football/players/53.png
 ----------------------------------------
 
 Top Players for Serie A:
 ========================================
 Name: V. Osimhen
-Team: Attacker
+Team: Napoli
 Position: Attacker
 Goals: 26
 Assists: 4
 Age: 26
 Nationality: Nigeria
+League: Serie A
 Image: https://media.api-sports.io/football/players/2780.png
 ----------------------------------------
 Name: Lautaro Martínez
-Team: Attacker
+Team: Inter
 Position: Attacker
 Goals: 21
 Assists: 6
 Age: 27
 Nationality: Argentina
+League: Serie A
 Image: https://media.api-sports.io/football/players/217.png
 ----------------------------------------
 Name: B. Dia
-Team: Attacker
+Team: Salernitana
 Position: Attacker
 Goals: 16
 Assists: 5
 Age: 28
 Nationality: Senegal
+League: Serie A
 Image: https://media.api-sports.io/football/players/22015.png
 ----------------------------------------
 Name: Rafael Leão
-Team: Attacker
+Team: AC Milan
 Position: Attacker
 Goals: 15
 Assists: 8
 Age: 25
 Nationality: Portugal
+League: Serie A
 Image: https://media.api-sports.io/football/players/22236.png
 ----------------------------------------
 Name: A. Lookman
-Team: Attacker
+Team: Atalanta
 Position: Attacker
 Goals: 13
 Assists: 6
 Age: 27
 Nationality: Nigeria
+League: Serie A
 Image: https://media.api-sports.io/football/players/18767.png
 ----------------------------------------
 Name: O. Giroud
-Team: Attacker
+Team: AC Milan
 Position: Attacker
 Goals: 13
 Assists: 5
 Age: 38
 Nationality: France
+League: Serie A
 Image: https://media.api-sports.io/football/players/2295.png
 ----------------------------------------
 Name: M&apos;Bala Nzola
-Team: Attacker
+Team: Spezia
 Position: Attacker
 Goals: 13
 Assists: 2
 Age: 28
 Nationality: Angola
+League: Serie A
 Image: https://media.api-sports.io/football/players/31318.png
 ----------------------------------------
 Name: A. Sanabria
-Team: Attacker
+Team: Torino
 Position: Attacker
 Goals: 12
 Assists: 4
 Age: 28
 Nationality: Paraguay
+League: Serie A
 Image: https://media.api-sports.io/football/players/2522.png
 ----------------------------------------
 Name: K. Kvaratskhelia
-Team: Attacker
+Team: Napoli
 Position: Attacker
 Goals: 12
 Assists: 10
 Age: 23
 Nationality: Georgia
+League: Serie A
 Image: https://media.api-sports.io/football/players/483.png
 ----------------------------------------
 Name: C. Immobile
-Team: Attacker
+Team: Lazio
 Position: Attacker
 Goals: 12
 Assists: 5
 Age: 34
 Nationality: Italy
+League: Serie A
 Image: https://media.api-sports.io/football/players/1863.png
 ----------------------------------------
 Name: P. Dybala
-Team: Attacker
+Team: AS Roma
 Position: Attacker
 Goals: 12
 Assists: 6
 Age: 31
 Nationality: Argentina
+League: Serie A
 Image: https://media.api-sports.io/football/players/875.png
 ----------------------------------------
 Name: D. Berardi
-Team: Attacker
+Team: Sassuolo
 Position: Attacker
 Goals: 12
 Assists: 7
 Age: 30
 Nationality: Italy
+League: Serie A
 Image: https://media.api-sports.io/football/players/30537.png
 ----------------------------------------
 Name: R. Orsolini
-Team: Attacker
+Team: Bologna
 Position: Attacker
 Goals: 11
 Assists: 4
 Age: 27
 Nationality: Italy
+League: Serie A
 Image: https://media.api-sports.io/football/players/30488.png
 ----------------------------------------
 Name: M. Zaccagni
-Team: Midfielder
+Team: Lazio
 Position: Midfielder
 Goals: 10
 Assists: 6
 Age: 29
 Nationality: Italy
+League: Serie A
 Image: https://media.api-sports.io/football/players/30937.png
 ----------------------------------------
 Name: Beto
-Team: Attacker
+Team: Udinese
 Position: Attacker
 Goals: 10
 Assists: 1
 Age: 26
 Nationality: Portugal
+League: Serie A
 Image: https://media.api-sports.io/football/players/125743.png
 ----------------------------------------
 Name: R. Lukaku
-Team: Attacker
+Team: Inter
 Position: Attacker
 Goals: 10
 Assists: 5
 Age: 31
 Nationality: Belgium
+League: Serie A
 Image: https://media.api-sports.io/football/players/907.png
 ----------------------------------------
 Name: T. Koopmeiners
-Team: Midfielder
+Team: Atalanta
 Position: Midfielder
 Goals: 10
 Assists: 4
 Age: 26
 Nationality: Netherlands
+League: Serie A
 Image: https://media.api-sports.io/football/players/36899.png
 ----------------------------------------
 Name: D. Vlahović
-Team: Attacker
+Team: Juventus
 Position: Attacker
 Goals: 10
 Assists: 2
 Age: 24
 Nationality: Serbia
+League: Serie A
 Image: https://media.api-sports.io/football/players/30415.png
 ----------------------------------------
 Name: M. Arnautović
-Team: Attacker
+Team: Bologna
 Position: Attacker
 Goals: 10
 Assists: None
 Age: 35
 Nationality: Austria
+League: Serie A
 Image: https://media.api-sports.io/football/players/18830.png
 ----------------------------------------
 Name: S. Milinković-Savić
-Team: Midfielder
+Team: Lazio
 Position: Midfielder
 Goals: 9
 Assists: 8
 Age: 29
 Nationality: Serbia
+League: Serie A
 Image: https://media.api-sports.io/football/players/1856.png
 ----------------------------------------
 
 Top Players for Bundesliga:
 ========================================
 Name: C. Nkunku
-Team: Attacker
+Team: RB Leipzig
 Position: Attacker
 Goals: 16
 Assists: 4
 Age: 27
 Nationality: France
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/269.png
 ----------------------------------------
 Name: N. Füllkrug
-Team: Attacker
+Team: Werder Bremen
 Position: Attacker
 Goals: 16
 Assists: 5
 Age: 31
 Nationality: Germany
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/25391.png
 ----------------------------------------
 Name: R. Kolo Muani
-Team: Attacker
+Team: Eintracht Frankfurt
 Position: Attacker
 Goals: 15
 Assists: 11
 Age: 26
 Nationality: France
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/21104.png
 ----------------------------------------
 Name: V. Grifo
-Team: Midfielder
+Team: SC Freiburg
 Position: Midfielder
 Goals: 15
 Assists: 5
 Age: 31
 Nationality: Italy
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/26248.png
 ----------------------------------------
 Name: S. Gnabry
-Team: Attacker
+Team: Bayern München
 Position: Attacker
 Goals: 14
 Assists: 5
 Age: 29
 Nationality: Germany
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/510.png
 ----------------------------------------
 Name: M. Thuram
-Team: Attacker
+Team: Borussia Mönchengladbach
 Position: Attacker
 Goals: 13
 Assists: 6
 Age: 27
 Nationality: France
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/21509.png
 ----------------------------------------
 Name: J. Musiala
-Team: Midfielder
+Team: Bayern München
 Position: Midfielder
 Goals: 12
 Assists: 10
 Age: 21
 Nationality: Germany
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/181812.png
 ----------------------------------------
 Name: J. Hofmann
-Team: Midfielder
+Team: Borussia Mönchengladbach
 Position: Midfielder
 Goals: 12
 Assists: 9
 Age: 32
 Nationality: Germany
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/25635.png
 ----------------------------------------
 Name: M. Ducksch
-Team: Attacker
+Team: Werder Bremen
 Position: Attacker
 Goals: 12
 Assists: 6
 Age: 30
 Nationality: Germany
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/25464.png
 ----------------------------------------
 Name: A. Kramarić
-Team: Attacker
+Team: 1899 Hoffenheim
 Position: Attacker
 Goals: 12
 Assists: 3
 Age: 33
 Nationality: Croatia
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/726.png
 ----------------------------------------
 Name: S. Becker
-Team: Attacker
+Team: Union Berlin
 Position: Attacker
 Goals: 11
 Assists: 7
 Age: 29
 Nationality: Suriname
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/37938.png
 ----------------------------------------
 Name: S. Guirassy
-Team: Attacker
+Team: VfB Stuttgart
 Position: Attacker
 Goals: 11
 Assists: 1
 Age: 28
 Nationality: Guinea
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/21393.png
 ----------------------------------------
 Name: M. Bülter
-Team: Attacker
+Team: FC Schalke 04
 Position: Attacker
 Goals: 11
 Assists: 1
 Age: 31
 Nationality: Germany
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/25242.png
 ----------------------------------------
 Name: D. Lukebakio
-Team: Attacker
+Team: Hertha BSC
 Position: Attacker
 Goals: 11
 Assists: 3
 Age: 27
 Nationality: Belgium
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/25458.png
 ----------------------------------------
 Name: M. Gregoritsch
-Team: Attacker
+Team: SC Freiburg
 Position: Attacker
 Goals: 10
 Assists: 4
 Age: 30
 Nationality: Austria
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/25297.png
 ----------------------------------------
 Name: K. Onisiwo
-Team: Attacker
+Team: FSV Mainz 05
 Position: Attacker
 Goals: 10
 Assists: 2
 Age: 32
 Nationality: Austria
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/25928.png
 ----------------------------------------
 Name: E. Choupo-Moting
-Team: Attacker
+Team: Bayern München
 Position: Attacker
 Goals: 10
 Assists: 2
 Age: 35
 Nationality: Cameroon
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/275.png
 ----------------------------------------
 Name: M. Ingvartsen
-Team: Attacker
+Team: FSV Mainz 05
 Position: Attacker
 Goals: 10
 Assists: None
 Age: 28
 Nationality: Denmark
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/1941.png
 ----------------------------------------
 Name: M. Diaby
-Team: Attacker
+Team: Bayer Leverkusen
 Position: Attacker
 Goals: 9
 Assists: 8
 Age: 25
 Nationality: France
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/277.png
 ----------------------------------------
 Name: J. Brandt
-Team: Midfielder
+Team: Borussia Dortmund
 Position: Midfielder
 Goals: 9
 Assists: 8
 Age: 28
 Nationality: Germany
+League: Bundesliga
 Image: https://media.api-sports.io/football/players/984.png
 ----------------------------------------
 
 Top Players for Ligue 1:
 ========================================
 Name: Kylian Mbappé
-Team: Attacker
+Team: Paris Saint Germain
 Position: Attacker
 Goals: 29
 Assists: 5
 Age: 26
 Nationality: France
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/278.png
 ----------------------------------------
 Name: A. Lacazette
-Team: Attacker
+Team: Lyon
 Position: Attacker
 Goals: 27
 Assists: 5
 Age: 33
 Nationality: France
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/1467.png
 ----------------------------------------
 Name: J. David
-Team: Attacker
+Team: Lille
 Position: Attacker
 Goals: 24
 Assists: 4
 Age: 24
 Nationality: Canada
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/8489.png
 ----------------------------------------
 Name: L. Openda
-Team: Attacker
+Team: Lens
 Position: Attacker
 Goals: 21
 Assists: 4
 Age: 24
 Nationality: Belgium
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/86.png
 ----------------------------------------
 Name: F. Balogun
-Team: Attacker
+Team: Reims
 Position: Attacker
 Goals: 21
 Assists: 2
 Age: 23
 Nationality: USA
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/138835.png
 ----------------------------------------
 Name: H. Diallo
-Team: Attacker
+Team: Strasbourg
 Position: Attacker
 Goals: 20
 Assists: 1
 Age: 29
 Nationality: Senegal
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/20535.png
 ----------------------------------------
 Name: E. Wahi
-Team: Attacker
+Team: Montpellier
 Position: Attacker
 Goals: 19
 Assists: 4
 Age: 21
 Nationality: France
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/162707.png
 ----------------------------------------
 Name: W. Ben Yedder
-Team: Attacker
+Team: Monaco
 Position: Attacker
 Goals: 19
 Assists: 6
 Age: 34
 Nationality: France
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/2059.png
 ----------------------------------------
 Name: L. Messi
-Team: Attacker
+Team: Paris Saint Germain
 Position: Attacker
 Goals: 16
 Assists: 16
 Age: 37
 Nationality: Argentina
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/154.png
 ----------------------------------------
 Name: A. Gouiri
-Team: Attacker
+Team: Rennes
 Position: Attacker
 Goals: 15
 Assists: None
 Age: 24
 Nationality: France
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/85041.png
 ----------------------------------------
 Name: A. Sánchez
-Team: Attacker
+Team: Marseille
 Position: Attacker
 Goals: 14
 Assists: 3
 Age: 36
 Nationality: Chile
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/910.png
 ----------------------------------------
 Name: G. Laborde
-Team: Attacker
+Team: Nice
 Position: Attacker
 Goals: 13
 Assists: 3
 Age: 30
 Nationality: France
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/21592.png
 ----------------------------------------
 Name: Neymar
-Team: Attacker
+Team: Paris Saint Germain
 Position: Attacker
 Goals: 13
 Assists: 11
 Age: 32
 Nationality: Brazil
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/276.png
 ----------------------------------------
 Name: B. Embolo
-Team: Attacker
+Team: Monaco
 Position: Attacker
 Goals: 12
 Assists: 2
 Age: 27
 Nationality: Switzerland
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/421.png
 ----------------------------------------
 Name: T. Dallinga
-Team: Attacker
+Team: Toulouse
 Position: Attacker
 Goals: 12
 Assists: 1
 Age: 24
 Nationality: Netherlands
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/93016.png
 ----------------------------------------
 Name: T. Moffi
-Team: Attacker
+Team: Lorient
 Position: Attacker
 Goals: 12
 Assists: None
 Age: 25
 Nationality: Nigeria
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/69971.png
 ----------------------------------------
 Name: Mama Baldé
-Team: Attacker
+Team: Estac Troyes
 Position: Attacker
 Goals: 12
 Assists: 3
 Age: 29
 Nationality: Guinea-Bissau
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/41323.png
 ----------------------------------------
 Name: T. Savanier
-Team: Midfielder
+Team: Montpellier
 Position: Midfielder
 Goals: 12
 Assists: 4
 Age: 33
 Nationality: France
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/21443.png
 ----------------------------------------
 Name: Z. Aboukhlal
-Team: Attacker
+Team: Toulouse
 Position: Attacker
 Goals: 10
 Assists: 5
 Age: 24
 Nationality: Morocco
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/243.png
 ----------------------------------------
 Name: J. Le Douaron
-Team: Attacker
+Team: Stade Brestois 29
 Position: Attacker
 Goals: 10
 Assists: 3
 Age: 26
 Nationality: France
+League: Ligue 1
 Image: https://media.api-sports.io/football/players/85772.png
 ----------------------------------------
