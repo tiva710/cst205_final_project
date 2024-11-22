@@ -1,0 +1,915 @@
+
+Top Players for English Premier League:
+========================================
+Name: E. Haaland
+Team: Attacker
+Position: Attacker
+Goals: 36
+Assists: 8
+Age: 24
+Nationality: Norway
+Image: https://media.api-sports.io/football/players/1100.png
+----------------------------------------
+Name: H. Kane
+Team: Attacker
+Position: Attacker
+Goals: 30
+Assists: 3
+Age: 31
+Nationality: England
+Image: https://media.api-sports.io/football/players/184.png
+----------------------------------------
+Name: I. Toney
+Team: Attacker
+Position: Attacker
+Goals: 20
+Assists: 4
+Age: 28
+Nationality: England
+Image: https://media.api-sports.io/football/players/19974.png
+----------------------------------------
+Name: Mohamed Salah
+Team: Attacker
+Position: Attacker
+Goals: 19
+Assists: 12
+Age: 32
+Nationality: Egypt
+Image: https://media.api-sports.io/football/players/306.png
+----------------------------------------
+Name: C. Wilson
+Team: Attacker
+Position: Attacker
+Goals: 18
+Assists: 5
+Age: 32
+Nationality: England
+Image: https://media.api-sports.io/football/players/2939.png
+----------------------------------------
+Name: M. Rashford
+Team: Attacker
+Position: Attacker
+Goals: 17
+Assists: 5
+Age: 27
+Nationality: England
+Image: https://media.api-sports.io/football/players/909.png
+----------------------------------------
+Name: M. Ødegaard
+Team: Midfielder
+Position: Midfielder
+Goals: 15
+Assists: 7
+Age: 26
+Nationality: Norway
+Image: https://media.api-sports.io/football/players/37127.png
+----------------------------------------
+Name: Gabriel Martinelli
+Team: Attacker
+Position: Attacker
+Goals: 15
+Assists: 5
+Age: 23
+Nationality: Brazil
+Image: https://media.api-sports.io/football/players/127769.png
+----------------------------------------
+Name: O. Watkins
+Team: Attacker
+Position: Attacker
+Goals: 15
+Assists: 6
+Age: 29
+Nationality: England
+Image: https://media.api-sports.io/football/players/19366.png
+----------------------------------------
+Name: B. Saka
+Team: Attacker
+Position: Attacker
+Goals: 14
+Assists: 11
+Age: 23
+Nationality: England
+Image: https://media.api-sports.io/football/players/1460.png
+----------------------------------------
+Name: A. Mitrović
+Team: Attacker
+Position: Attacker
+Goals: 14
+Assists: 1
+Age: 30
+Nationality: Serbia
+Image: https://media.api-sports.io/football/players/2825.png
+----------------------------------------
+Name: H. Barnes
+Team: Midfielder
+Position: Midfielder
+Goals: 13
+Assists: 1
+Age: 27
+Nationality: England
+Image: https://media.api-sports.io/football/players/18778.png
+----------------------------------------
+Name: Rodrigo
+Team: Attacker
+Position: Attacker
+Goals: 13
+Assists: 1
+Age: 33
+Nationality: Spain
+Image: https://media.api-sports.io/football/players/935.png
+----------------------------------------
+Name: P. Foden
+Team: Midfielder
+Position: Midfielder
+Goals: 11
+Assists: 5
+Age: 24
+Nationality: England
+Image: https://media.api-sports.io/football/players/631.png
+----------------------------------------
+Name: Roberto Firmino
+Team: Attacker
+Position: Attacker
+Goals: 11
+Assists: 4
+Age: 33
+Nationality: Brazil
+Image: https://media.api-sports.io/football/players/302.png
+----------------------------------------
+Name: M. Almirón
+Team: Midfielder
+Position: Midfielder
+Goals: 11
+Assists: 2
+Age: 30
+Nationality: Paraguay
+Image: https://media.api-sports.io/football/players/2507.png
+----------------------------------------
+Name: Gabriel Jesus
+Team: Attacker
+Position: Attacker
+Goals: 11
+Assists: 6
+Age: 27
+Nationality: Brazil
+Image: https://media.api-sports.io/football/players/643.png
+----------------------------------------
+Name: Son Heung-Min
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 6
+Age: 32
+Nationality: Korea Republic
+Image: https://media.api-sports.io/football/players/186.png
+----------------------------------------
+Name: T. Awoniyi
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 1
+Age: 27
+Nationality: Nigeria
+Image: https://media.api-sports.io/football/players/8598.png
+----------------------------------------
+Name: J. Maddison
+Team: Midfielder
+Position: Midfielder
+Goals: 10
+Assists: 9
+Age: 28
+Nationality: England
+Image: https://media.api-sports.io/football/players/18784.png
+----------------------------------------
+
+Top Players for La Liga:
+========================================
+Name: R. Lewandowski
+Team: Attacker
+Position: Attacker
+Goals: 23
+Assists: 7
+Age: 36
+Nationality: Poland
+Image: https://media.api-sports.io/football/players/521.png
+----------------------------------------
+Name: K. Benzema
+Team: Attacker
+Position: Attacker
+Goals: 19
+Assists: 3
+Age: 37
+Nationality: France
+Image: https://media.api-sports.io/football/players/759.png
+----------------------------------------
+Name: Joselu
+Team: Attacker
+Position: Attacker
+Goals: 16
+Assists: 2
+Age: 34
+Nationality: Spain
+Image: https://media.api-sports.io/football/players/18907.png
+----------------------------------------
+Name: A. Griezmann
+Team: Attacker
+Position: Attacker
+Goals: 15
+Assists: 16
+Age: 33
+Nationality: France
+Image: https://media.api-sports.io/football/players/56.png
+----------------------------------------
+Name: V. Muriqi
+Team: Attacker
+Position: Attacker
+Goals: 15
+Assists: 3
+Age: 30
+Nationality: Kosovo
+Image: https://media.api-sports.io/football/players/50048.png
+----------------------------------------
+Name: Borja Iglesias
+Team: Attacker
+Position: Attacker
+Goals: 15
+Assists: 3
+Age: 31
+Nationality: Spain
+Image: https://media.api-sports.io/football/players/47348.png
+----------------------------------------
+Name: E. Ünal
+Team: Attacker
+Position: Attacker
+Goals: 14
+Assists: 3
+Age: 27
+Nationality: Türkiye
+Image: https://media.api-sports.io/football/players/47499.png
+----------------------------------------
+Name: Álvaro Morata
+Team: Attacker
+Position: Attacker
+Goals: 13
+Assists: 2
+Age: 32
+Nationality: Spain
+Image: https://media.api-sports.io/football/players/59.png
+----------------------------------------
+Name: V. Castellanos
+Team: Attacker
+Position: Attacker
+Goals: 13
+Assists: None
+Age: 26
+Nationality: Argentina
+Image: https://media.api-sports.io/football/players/50856.png
+----------------------------------------
+Name: N. Jackson
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 4
+Age: 23
+Nationality: Senegal
+Image: https://media.api-sports.io/football/players/283058.png
+----------------------------------------
+Name: A. Sørloth
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 3
+Age: 29
+Nationality: Norway
+Image: https://media.api-sports.io/football/players/8492.png
+----------------------------------------
+Name: Iago Aspas
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 3
+Age: 37
+Nationality: Spain
+Image: https://media.api-sports.io/football/players/47445.png
+----------------------------------------
+Name: Gabri Veiga
+Team: Midfielder
+Position: Midfielder
+Goals: 11
+Assists: 4
+Age: 22
+Nationality: Spain
+Image: https://media.api-sports.io/football/players/182504.png
+----------------------------------------
+Name: Vinícius Júnior
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 9
+Age: 24
+Nationality: Brazil
+Image: https://media.api-sports.io/football/players/762.png
+----------------------------------------
+Name: M. Braithwaite
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 2
+Age: 33
+Nationality: Denmark
+Image: https://media.api-sports.io/football/players/2737.png
+----------------------------------------
+Name: I. Williams
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 3
+Age: 30
+Nationality: Ghana
+Image: https://media.api-sports.io/football/players/47294.png
+----------------------------------------
+Name: Oihan Sancet
+Team: Midfielder
+Position: Midfielder
+Goals: 10
+Assists: 2
+Age: 24
+Nationality: Spain
+Image: https://media.api-sports.io/football/players/128398.png
+----------------------------------------
+Name: Marco Asensio
+Team: Attacker
+Position: Attacker
+Goals: 9
+Assists: 6
+Age: 28
+Nationality: Spain
+Image: https://media.api-sports.io/football/players/746.png
+----------------------------------------
+Name: T. Kubo
+Team: Attacker
+Position: Attacker
+Goals: 9
+Assists: 4
+Age: 23
+Nationality: Japan
+Image: https://media.api-sports.io/football/players/32862.png
+----------------------------------------
+Name: Á. Correa
+Team: Attacker
+Position: Attacker
+Goals: 9
+Assists: 1
+Age: 29
+Nationality: Argentina
+Image: https://media.api-sports.io/football/players/53.png
+----------------------------------------
+
+Top Players for Serie A:
+========================================
+Name: V. Osimhen
+Team: Attacker
+Position: Attacker
+Goals: 26
+Assists: 4
+Age: 26
+Nationality: Nigeria
+Image: https://media.api-sports.io/football/players/2780.png
+----------------------------------------
+Name: Lautaro Martínez
+Team: Attacker
+Position: Attacker
+Goals: 21
+Assists: 6
+Age: 27
+Nationality: Argentina
+Image: https://media.api-sports.io/football/players/217.png
+----------------------------------------
+Name: B. Dia
+Team: Attacker
+Position: Attacker
+Goals: 16
+Assists: 5
+Age: 28
+Nationality: Senegal
+Image: https://media.api-sports.io/football/players/22015.png
+----------------------------------------
+Name: Rafael Leão
+Team: Attacker
+Position: Attacker
+Goals: 15
+Assists: 8
+Age: 25
+Nationality: Portugal
+Image: https://media.api-sports.io/football/players/22236.png
+----------------------------------------
+Name: A. Lookman
+Team: Attacker
+Position: Attacker
+Goals: 13
+Assists: 6
+Age: 27
+Nationality: Nigeria
+Image: https://media.api-sports.io/football/players/18767.png
+----------------------------------------
+Name: O. Giroud
+Team: Attacker
+Position: Attacker
+Goals: 13
+Assists: 5
+Age: 38
+Nationality: France
+Image: https://media.api-sports.io/football/players/2295.png
+----------------------------------------
+Name: M&apos;Bala Nzola
+Team: Attacker
+Position: Attacker
+Goals: 13
+Assists: 2
+Age: 28
+Nationality: Angola
+Image: https://media.api-sports.io/football/players/31318.png
+----------------------------------------
+Name: A. Sanabria
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 4
+Age: 28
+Nationality: Paraguay
+Image: https://media.api-sports.io/football/players/2522.png
+----------------------------------------
+Name: K. Kvaratskhelia
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 10
+Age: 23
+Nationality: Georgia
+Image: https://media.api-sports.io/football/players/483.png
+----------------------------------------
+Name: C. Immobile
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 5
+Age: 34
+Nationality: Italy
+Image: https://media.api-sports.io/football/players/1863.png
+----------------------------------------
+Name: P. Dybala
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 6
+Age: 31
+Nationality: Argentina
+Image: https://media.api-sports.io/football/players/875.png
+----------------------------------------
+Name: D. Berardi
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 7
+Age: 30
+Nationality: Italy
+Image: https://media.api-sports.io/football/players/30537.png
+----------------------------------------
+Name: R. Orsolini
+Team: Attacker
+Position: Attacker
+Goals: 11
+Assists: 4
+Age: 27
+Nationality: Italy
+Image: https://media.api-sports.io/football/players/30488.png
+----------------------------------------
+Name: M. Zaccagni
+Team: Midfielder
+Position: Midfielder
+Goals: 10
+Assists: 6
+Age: 29
+Nationality: Italy
+Image: https://media.api-sports.io/football/players/30937.png
+----------------------------------------
+Name: Beto
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 1
+Age: 26
+Nationality: Portugal
+Image: https://media.api-sports.io/football/players/125743.png
+----------------------------------------
+Name: R. Lukaku
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 5
+Age: 31
+Nationality: Belgium
+Image: https://media.api-sports.io/football/players/907.png
+----------------------------------------
+Name: T. Koopmeiners
+Team: Midfielder
+Position: Midfielder
+Goals: 10
+Assists: 4
+Age: 26
+Nationality: Netherlands
+Image: https://media.api-sports.io/football/players/36899.png
+----------------------------------------
+Name: D. Vlahović
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 2
+Age: 24
+Nationality: Serbia
+Image: https://media.api-sports.io/football/players/30415.png
+----------------------------------------
+Name: M. Arnautović
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: None
+Age: 35
+Nationality: Austria
+Image: https://media.api-sports.io/football/players/18830.png
+----------------------------------------
+Name: S. Milinković-Savić
+Team: Midfielder
+Position: Midfielder
+Goals: 9
+Assists: 8
+Age: 29
+Nationality: Serbia
+Image: https://media.api-sports.io/football/players/1856.png
+----------------------------------------
+
+Top Players for Bundesliga:
+========================================
+Name: C. Nkunku
+Team: Attacker
+Position: Attacker
+Goals: 16
+Assists: 4
+Age: 27
+Nationality: France
+Image: https://media.api-sports.io/football/players/269.png
+----------------------------------------
+Name: N. Füllkrug
+Team: Attacker
+Position: Attacker
+Goals: 16
+Assists: 5
+Age: 31
+Nationality: Germany
+Image: https://media.api-sports.io/football/players/25391.png
+----------------------------------------
+Name: R. Kolo Muani
+Team: Attacker
+Position: Attacker
+Goals: 15
+Assists: 11
+Age: 26
+Nationality: France
+Image: https://media.api-sports.io/football/players/21104.png
+----------------------------------------
+Name: V. Grifo
+Team: Midfielder
+Position: Midfielder
+Goals: 15
+Assists: 5
+Age: 31
+Nationality: Italy
+Image: https://media.api-sports.io/football/players/26248.png
+----------------------------------------
+Name: S. Gnabry
+Team: Attacker
+Position: Attacker
+Goals: 14
+Assists: 5
+Age: 29
+Nationality: Germany
+Image: https://media.api-sports.io/football/players/510.png
+----------------------------------------
+Name: M. Thuram
+Team: Attacker
+Position: Attacker
+Goals: 13
+Assists: 6
+Age: 27
+Nationality: France
+Image: https://media.api-sports.io/football/players/21509.png
+----------------------------------------
+Name: J. Musiala
+Team: Midfielder
+Position: Midfielder
+Goals: 12
+Assists: 10
+Age: 21
+Nationality: Germany
+Image: https://media.api-sports.io/football/players/181812.png
+----------------------------------------
+Name: J. Hofmann
+Team: Midfielder
+Position: Midfielder
+Goals: 12
+Assists: 9
+Age: 32
+Nationality: Germany
+Image: https://media.api-sports.io/football/players/25635.png
+----------------------------------------
+Name: M. Ducksch
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 6
+Age: 30
+Nationality: Germany
+Image: https://media.api-sports.io/football/players/25464.png
+----------------------------------------
+Name: A. Kramarić
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 3
+Age: 33
+Nationality: Croatia
+Image: https://media.api-sports.io/football/players/726.png
+----------------------------------------
+Name: S. Becker
+Team: Attacker
+Position: Attacker
+Goals: 11
+Assists: 7
+Age: 29
+Nationality: Suriname
+Image: https://media.api-sports.io/football/players/37938.png
+----------------------------------------
+Name: S. Guirassy
+Team: Attacker
+Position: Attacker
+Goals: 11
+Assists: 1
+Age: 28
+Nationality: Guinea
+Image: https://media.api-sports.io/football/players/21393.png
+----------------------------------------
+Name: M. Bülter
+Team: Attacker
+Position: Attacker
+Goals: 11
+Assists: 1
+Age: 31
+Nationality: Germany
+Image: https://media.api-sports.io/football/players/25242.png
+----------------------------------------
+Name: D. Lukebakio
+Team: Attacker
+Position: Attacker
+Goals: 11
+Assists: 3
+Age: 27
+Nationality: Belgium
+Image: https://media.api-sports.io/football/players/25458.png
+----------------------------------------
+Name: M. Gregoritsch
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 4
+Age: 30
+Nationality: Austria
+Image: https://media.api-sports.io/football/players/25297.png
+----------------------------------------
+Name: K. Onisiwo
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 2
+Age: 32
+Nationality: Austria
+Image: https://media.api-sports.io/football/players/25928.png
+----------------------------------------
+Name: E. Choupo-Moting
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 2
+Age: 35
+Nationality: Cameroon
+Image: https://media.api-sports.io/football/players/275.png
+----------------------------------------
+Name: M. Ingvartsen
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: None
+Age: 28
+Nationality: Denmark
+Image: https://media.api-sports.io/football/players/1941.png
+----------------------------------------
+Name: M. Diaby
+Team: Attacker
+Position: Attacker
+Goals: 9
+Assists: 8
+Age: 25
+Nationality: France
+Image: https://media.api-sports.io/football/players/277.png
+----------------------------------------
+Name: J. Brandt
+Team: Midfielder
+Position: Midfielder
+Goals: 9
+Assists: 8
+Age: 28
+Nationality: Germany
+Image: https://media.api-sports.io/football/players/984.png
+----------------------------------------
+
+Top Players for Ligue 1:
+========================================
+Name: Kylian Mbappé
+Team: Attacker
+Position: Attacker
+Goals: 29
+Assists: 5
+Age: 26
+Nationality: France
+Image: https://media.api-sports.io/football/players/278.png
+----------------------------------------
+Name: A. Lacazette
+Team: Attacker
+Position: Attacker
+Goals: 27
+Assists: 5
+Age: 33
+Nationality: France
+Image: https://media.api-sports.io/football/players/1467.png
+----------------------------------------
+Name: J. David
+Team: Attacker
+Position: Attacker
+Goals: 24
+Assists: 4
+Age: 24
+Nationality: Canada
+Image: https://media.api-sports.io/football/players/8489.png
+----------------------------------------
+Name: L. Openda
+Team: Attacker
+Position: Attacker
+Goals: 21
+Assists: 4
+Age: 24
+Nationality: Belgium
+Image: https://media.api-sports.io/football/players/86.png
+----------------------------------------
+Name: F. Balogun
+Team: Attacker
+Position: Attacker
+Goals: 21
+Assists: 2
+Age: 23
+Nationality: USA
+Image: https://media.api-sports.io/football/players/138835.png
+----------------------------------------
+Name: H. Diallo
+Team: Attacker
+Position: Attacker
+Goals: 20
+Assists: 1
+Age: 29
+Nationality: Senegal
+Image: https://media.api-sports.io/football/players/20535.png
+----------------------------------------
+Name: E. Wahi
+Team: Attacker
+Position: Attacker
+Goals: 19
+Assists: 4
+Age: 21
+Nationality: France
+Image: https://media.api-sports.io/football/players/162707.png
+----------------------------------------
+Name: W. Ben Yedder
+Team: Attacker
+Position: Attacker
+Goals: 19
+Assists: 6
+Age: 34
+Nationality: France
+Image: https://media.api-sports.io/football/players/2059.png
+----------------------------------------
+Name: L. Messi
+Team: Attacker
+Position: Attacker
+Goals: 16
+Assists: 16
+Age: 37
+Nationality: Argentina
+Image: https://media.api-sports.io/football/players/154.png
+----------------------------------------
+Name: A. Gouiri
+Team: Attacker
+Position: Attacker
+Goals: 15
+Assists: None
+Age: 24
+Nationality: France
+Image: https://media.api-sports.io/football/players/85041.png
+----------------------------------------
+Name: A. Sánchez
+Team: Attacker
+Position: Attacker
+Goals: 14
+Assists: 3
+Age: 36
+Nationality: Chile
+Image: https://media.api-sports.io/football/players/910.png
+----------------------------------------
+Name: G. Laborde
+Team: Attacker
+Position: Attacker
+Goals: 13
+Assists: 3
+Age: 30
+Nationality: France
+Image: https://media.api-sports.io/football/players/21592.png
+----------------------------------------
+Name: Neymar
+Team: Attacker
+Position: Attacker
+Goals: 13
+Assists: 11
+Age: 32
+Nationality: Brazil
+Image: https://media.api-sports.io/football/players/276.png
+----------------------------------------
+Name: B. Embolo
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 2
+Age: 27
+Nationality: Switzerland
+Image: https://media.api-sports.io/football/players/421.png
+----------------------------------------
+Name: T. Dallinga
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 1
+Age: 24
+Nationality: Netherlands
+Image: https://media.api-sports.io/football/players/93016.png
+----------------------------------------
+Name: T. Moffi
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: None
+Age: 25
+Nationality: Nigeria
+Image: https://media.api-sports.io/football/players/69971.png
+----------------------------------------
+Name: Mama Baldé
+Team: Attacker
+Position: Attacker
+Goals: 12
+Assists: 3
+Age: 29
+Nationality: Guinea-Bissau
+Image: https://media.api-sports.io/football/players/41323.png
+----------------------------------------
+Name: T. Savanier
+Team: Midfielder
+Position: Midfielder
+Goals: 12
+Assists: 4
+Age: 33
+Nationality: France
+Image: https://media.api-sports.io/football/players/21443.png
+----------------------------------------
+Name: Z. Aboukhlal
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 5
+Age: 24
+Nationality: Morocco
+Image: https://media.api-sports.io/football/players/243.png
+----------------------------------------
+Name: J. Le Douaron
+Team: Attacker
+Position: Attacker
+Goals: 10
+Assists: 3
+Age: 26
+Nationality: France
+Image: https://media.api-sports.io/football/players/85772.png
+----------------------------------------
