@@ -1,8 +1,12 @@
 import requests
 from Player import Player
+# from player_info import player_info
+import pickle
+
 
 # Replace Here if u want to use a different key
 api_key = 'ad24ab0e4af27534f6451c76bbd7f140'
+# api_key_2 = '319a09eec0msh4ab236e7ed0c463p188ff1jsnb63dc27d374'
 
 # Function to call the API and get players data. Allows dynamic endpoints/params
 def call_api(endpoint, params=None):
@@ -46,7 +50,8 @@ def get_top_players(league_id, season=2022, league_name = "Unknown"):
     
     for player in players:
         player_obj = Player(
-            name=player['player']['name'],
+            firstname=player['player']['firstname'],
+            lastname=player['player']['lastname'],
             team=player['statistics'][0]['team']['name'], 
             position=player['statistics'][0]['games']['position'], 
             image=player['player']['photo'],
@@ -76,7 +81,7 @@ def get_all_league_players(league_ids):
 # Function to write player information to a text file
 def write_players_to_file(all_league_players):
     
-    with open('top_players.txt', 'w') as file:
+    with open('top_players.txt', 'w', encoding="utf-8") as file:
         for league_name, players in all_league_players.items():
             file.write(f"\nTop Players for {league_name}:\n")
             file.write("=" * 40 + "\n")
@@ -106,10 +111,12 @@ league_ids = {
     # ,'Eredivisie': 88  
 }
 
-#
 all_league_players = get_all_league_players(league_ids)
 
 write_players_to_file(all_league_players)
+
+with open('pickled_top_players.txt', "wb") as pickled_file:
+    pickle.dump(all_league_players, pickled_file)
     
     
     
