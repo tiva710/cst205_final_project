@@ -1,6 +1,6 @@
 class Player:
-    def __init__(self, name, team, position, image, nationality, goals, assists, age, league):
-        self.name = name
+    def __init__(self, firstname, lastname, team, position, image, nationality, goals, assists, age, league):
+        self.name = firstname + " " + lastname
         self.team = team
         self.position = position
         self.image = image

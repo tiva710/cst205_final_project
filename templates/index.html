@@ -60,7 +60,7 @@
     </style>
 </head>
 <body>
-    <h1 class="text-center">Game Name </h1>
+    <h1 class="text-center"> Soccerdle </h1>
     <br><br>
 
     <!-- Div to display the hint img -->
@@ -72,8 +72,6 @@
             <img src="{{ hint_image }}" alt="Hint Silhouette" width="50">     
         {% endif %}
     </div>
-
-
 
     <div class="d-flex">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 220px;">
@@ -204,6 +202,30 @@
                 sessionStorage.setItem('modalShown', true);
             }
         });
+
+        // Hint Functionality
+
+        // Idea for hint
+        // Allow player to show button (which shows image) 
+        // only if the player has reach the final guess
+        document.getElementById("hintImage").style.display = "none"
+
+        function showHintImage()
+        {
+            if(document.getElementById("hintImage").style.display == "none")
+            {
+                document.getElementById("hintImage").style.display = "block"
+            }else
+            {
+                document.getElementById("hintImage").style.display = "none"
+            }
+        }
+
+        // End Hint Functionality
+
+
+
+        
     </script>
 </body>
 </html>
