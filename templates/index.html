@@ -53,20 +53,28 @@
         .slot-header div {
             font-weight: bold;
         }
+
+        #btnDiv, #hintDiv{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h1 class="text-center"> Soccerdle </h1>
     <br><br>
-    <!-- HINT FUNCTIONALITY  -->
-    <div id="hintImage">
-        <img src="{{guess_this_player.image}}" alt="">
+
+    <!-- Div to display the hint img -->
+
+    <!-- Feel free to change/remove the width once the Pillow image is implemented -->
+
+    <div id="hintDiv">
+        {% if hint_image %}
+            <img src="{{ hint_image }}" alt="Hint Silhouette" width="50">     
+        {% endif %}
     </div>
-    <button onclick="showHintImage()"> HINT </button>
-    <!-- END OF HINT FUNCTIONALITY -->
+
     <div class="d-flex">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 220px;">
-            <!-- <span class="fs-4">Menu</span> -->
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
@@ -78,10 +86,17 @@
             <hr>
         </div>
 
+        
         <div class="search-container input-group input-wrapper hoverable-menu activated" style="padding-right: 40px; align-items: center;">
             <input type="text" class="form-control" placeholder="Make Your Guess..." id="playerSearch">
             <button class="btn btn-primary" id="searchButton">Submit Guess</button>
         </div>
+    </div>
+
+    <div id="btnDiv">
+        <form action="/show_hint" method="POST">
+            <button id="userHint" class="btn btn-primary" type="submit" >Hint</button>
+        </form>
     </div>
 
 
@@ -92,9 +107,9 @@
             <div class="col-2">Team</div>
             <div class="col-2">Goals</div>
             <div class="col-2">Assists</div>
-            <div class="col-2">Matches</div>
             <div class="col-2">Age</div>
             <div class="col-2">Country</div>
+            <div class="col-2">League</div>
         </div>
         
 
@@ -119,20 +134,58 @@
 
 
 
+
+
     <!-- MODAL BELOW -->
 
     <div class="modal fade" id="instructionsModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="instructionsModalLabel">Welcome to Game Name!</h5>
+                    <h5 class="modal-title" id="instructionsModalLabel">Welcome to Soccerdle!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Here are the instructions for the game. Follow them carefully to succeed!
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    Follow these instructions carefully to succeed! 
+                    <!-- <br>  -->
+                    <ol>
+                        <li>
+                            <strong>Objective: </strong> Guess the correct soccer player. You'll have 8 attempts to identify the player 
+                        </li>
+                        <li> 
+                            <strong> Starting the Game: </strong> On your first guess, type the name of any soccer player in the search bar. 
+                            <ul>
+                               <li>An auto-complete feature will assist you in selecting a valid player name. </li>
+                            </ul>
+                        </li>
+                        <li> 
+                            <strong>Hints: </strong> You can click the "Hint" button to toggle a silhouette of the player if you're stuck. 
+                        </li>
+                        <li> 
+                            <strong>Search Results: </strong> After each guess, you'll be provided with color-coded feedback to help you refine your next guesses. 
+                            <ul>
+                                <li>Green: Correct </li>
+                                <li>Yellow: Close! </li>
+                                <li>No color: Incorrect</li>
+                            </ul>
+                        </li>
+                        <li> 
+                            <strong>Ending the Game: </strong> Guess the correct soccer player within 8 attempts to win! Regardless, you will be shown a detailed profile of the player and their stats at the end.
+                        </li>
+                        <li> 
+                            <strong>Additional Features: </strong>
+                            <ul>
+                                <li>
+                                    Access the instructions at any time by clicking the "Instructions" button in the navigation menu. 
+                                </li>
+                                <li>
+                                    After completing a game, click the "Play Again" button to start a new round with a different player.
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ol>                    
+                    
                 </div>
             </div>
         </div>
@@ -143,8 +196,11 @@
     <script>
         // Show the modal on page load
         document.addEventListener('DOMContentLoaded', function () {
-            const modal = new bootstrap.Modal(document.getElementById('instructionsModal'));
-            modal.show();
+            if (!sessionStorage.getItem('modalShown')) {
+                const modal = new bootstrap.Modal(document.getElementById('instructionsModal'));
+                modal.show();
+                sessionStorage.setItem('modalShown', true);
+            }
         });
 
         // Hint Functionality
