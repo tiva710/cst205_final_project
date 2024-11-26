@@ -45,5 +45,8 @@ bootstrap = Bootstrap5(app)
 
 @app.route('/')
 def home():
+  with open("pickled_top_players.txt", "rb") as pickled_file:
+    all_league_players = pickle.load(pickled_file)
   guess_this_player = get_random_player_to_guess()
-  return render_template ('index.html', guess_this_player=guess_this_player)
+  print(guess_this_player)
+  return render_template ('index.html', guess_this_player=guess_this_player, dict_of_players = all_league_players)
