@@ -53,13 +53,18 @@ hint_showing = False
 
 def home(): 
   guess_this_player = get_random_player_to_guess()
+  with open("pickled_top_players.txt", "rb") as pickled_file:
+    all_league_players = pickle.load(pickled_file)
+  print(guess_this_player)
+    
+
    #IMAGE SRC HERE 
   global hint_showing
   if hint_showing == True: 
     hint_image = 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' 
   else:
      hint_image = None
-  return render_template ('index.html', hint_image=hint_image, guess_this_player=guess_this_player)
+  return render_template ('index.html', hint_image=hint_image, guess_this_player=guess_this_player, dict_of_players=all_league_players)
 
 
 @app.route('/show_hint', methods=['POST'])
