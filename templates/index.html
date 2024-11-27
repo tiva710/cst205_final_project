@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
     <title>Home</title>
+    {{ bootstrap.load_css() }}
 
     <style>
         h1{
@@ -86,9 +87,16 @@
             <hr>
         </div>
 
-        
+        <select name="players" id="playersSelect">
+            {% for league, players in dict_of_players.items() %}
+                {% for player in players %}
+                    <option value="{{player.name}}" id="{{player.name}}"> {{player.name}} </option>
+                {% endfor %}
+            {% endfor%}
+        </select>
+
         <div class="search-container input-group input-wrapper hoverable-menu activated" style="padding-right: 40px; align-items: center;">
-            <input type="text" class="form-control" placeholder="Make Your Guess..." id="playerSearch">
+            <input id="playerGuess" type="text" class="form-control" placeholder="Make Your Guess..." id="playerSearch">
             <button class="btn btn-primary" id="searchButton">Submit Guess</button>
         </div>
     </div>
@@ -100,16 +108,16 @@
     </div>
 
 
-    <div class="slots-container">
+    <div id="slotsContainer" class="slots-container">
         <div class="slot-header">
             <div class="col-3">Player Name</div>
             <div class="col-2">Position</div>
             <div class="col-2">Team</div>
             <div class="col-2">Goals</div>
             <div class="col-2">Assists</div>
-            <div class="col-2">Age</div>
-            <div class="col-2">Country</div>
             <div class="col-2">League</div>
+            <div class="col-2">Age</div>
+            <div class="col-2">Nationality</div>
         </div>
         
 
@@ -118,15 +126,19 @@
         and figuring out which guess they are on -->
         <div class="slot">
             <div class="col-3">
-                <strong></strong>
+                <strong id="playerName"></strong>
             </div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
+            <div id="playerPosition" class="col-2"></div>
+            <div id="playerTeam" class="col-2"></div>
+            <div id="playerGoals" class="col-2"></div>
+            <div id="playerAssists" class="col-2"></div>
+            <div id="playerLeague" class="col-2"></div>
+            <div id="playerAge" class="col-2"></div>
+            <div id="playerNationality" class="col-2"></div>
+        </div>
+
+        <!-- <div id="guess2" class="slot"> -->
+
         </div>
     </div>
 
@@ -203,27 +215,87 @@
             }
         });
 
-        // Hint Functionality
-
-        // Idea for hint
-        // Allow player to show button (which shows image) 
-        // only if the player has reach the final guess
-        document.getElementById("hintImage").style.display = "none"
-
-        function showHintImage()
-        {
-            if(document.getElementById("hintImage").style.display == "none")
+        const submitButton = document.getElementById("searchButton")
+        var guesses = 0;
+        var guessAllowed = 8;
+        var win = false;
+        
+        submitButton.addEventListener("click", function (){
+            const selection = document.getElementById("playersSelect")
+            console.log(selection.value)
+            if(guesses < 8 && !win)
             {
-                document.getElementById("hintImage").style.display = "block"
-            }else
-            {
-                document.getElementById("hintImage").style.display = "none"
+                if (selection.value == "{{guess_this_player.name}}") 
+                {
+                    console.log("YOU WIN")
+                    win = true;
+                }
+                guesses++;
+                "{% for league, players in dict_of_players.items() %}"
+                    "{% for player in players %}"
+                        if(selection.value == "{{player.name}}")
+                        {
+                            if(guesses == 1)
+                            {
+                                console.log("FOUND")
+                                document.getElementById("playerName").innerHTML = "{{ player.name }}"
+                                document.getElementById("playerTeam").innerHTML = "{{ player.team }}"
+                                document.getElementById("playerGoals").innerHTML = "{{ player.goals }}"
+                                document.getElementById("playerAssists").innerHTML = "{{ player.assists }}"
+                                document.getElementById("playerLeague").innerHTML = "{{ player.league }}"
+                                document.getElementById("playerAge").innerHTML = "{{ player.age }}"
+                                document.getElementById("playerPosition").innerHTML = "{{ player.position }}"
+                                document.getElementById("playerNationality").innerHTML = "{{ player.nationality }}"
+                            }else
+                            {
+                                const slotsContainer = document.getElementById("slotsContainer")
+                                const outerDIV = document.createElement("div")
+                                outerDIV.setAttribute("id", `guess${guesses}`)
+                                outerDIV.setAttribute("class", "slot")
+                                slotsContainer.appendChild(outerDIV)
+                                const nameDIV = document.createElement("div")
+                                nameDIV.setAttribute("class", "col-3")
+                                outerDIV.appendChild(nameDIV)
+                                const name = document.createElement("strong")
+                                nameDIV.appendChild(name)
+                                name.innerHTML = "{{player.name}}"
+                                const position = document.createElement("div")
+                                position.setAttribute("class", "col-2")
+                                position.innerHTML = "{{player.position}}"
+                                const team = document.createElement("div")
+                                team.setAttribute("class", "col-2")
+                                team.innerHTML = "{{player.team}}"
+                                const goals = document.createElement("div")
+                                goals.setAttribute("class", "col-2")
+                                goals.innerHTML = "{{player.goals}}"
+                                const assists = document.createElement("div")
+                                assists.setAttribute("class", "col-2")
+                                assists.innerHTML = "{{player.assists}}"
+                                const league = document.createElement("div")
+                                league.setAttribute("class", "col-2")
+                                league.innerHTML = "{{player.league}}"
+                                const age = document.createElement("div")
+                                age.setAttribute("class", "col-2")
+                                age.innerHTML = "{{player.age}}"
+                                const nationality = document.createElement("div")
+                                nationality.setAttribute("class", "col-2")
+                                nationality.innerHTML = "{{player.nationality}}"
+                                outerDIV.appendChild(position)
+                                outerDIV.appendChild(team)
+                                outerDIV.appendChild(goals)
+                                outerDIV.appendChild(assists)
+                                outerDIV.appendChild(league)
+                                outerDIV.appendChild(age)
+                                outerDIV.appendChild(nationality)
+                            }
+                            console.log(guesses)
+                        }
+                    "{% endfor %}"
+                "{% endfor%}"                
+            }else{
+                console.log("OUT OF GUESSES")
             }
-        }
-
-        // End Hint Functionality
-
-
+        })
 
         
     </script>
