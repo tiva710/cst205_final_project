@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Player</title>
+</head>
+<body>
+    <h1>Guess the Player</h1>
+    <form action="/submit_guess" method="POST">
+        <label for="player_name">Choose a player:</label>
+        <select name="player_name" id="player_name">
+            {% for player in players %}
+            <option value="{{ player.name }}">{{ player.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Submit Guess</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Feedback for {{ guessed_player.name }}</h1>
+    <table border="1">
+        <tr>
+            <th>Category</th>
+            <th>Guessed Value</th>
+            <th>Result</th>
+        </tr>
+        {% for category, guess, result in feedback %}
+        <tr>
+            <td>{{ category }}</td>
+            <td>{{ guess }}</td>
+            <td>{{ result }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>The chosen player was: {{ chosen_player.name }}</p>
+</body>
+</html>
+

@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Soccer Players Comparison</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <h1>Placeholder</h1>
-    
+    <h1>Soccer Players Comparison</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Team</th>
+            <th>Position</th>
+            <th>Nationality</th>
+            <th>Jersey Number</th>
+        </tr>
+        {% for player in players %}
+        <tr>
+            <td>{{ player.name }}</td>
+            <td>{{ player.team }}</td>
+            <td>{{ player.position }}</td>
+            <td>{{ player.nationality }}</td>
+            <td>{{ player.jersey_number }}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
