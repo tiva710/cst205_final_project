@@ -65,6 +65,23 @@
             margin-right: 15px;
         }
 
+        #correct{
+            background-color: #6fcf6f;
+            color:black;
+            display: inline;
+        }
+
+        #close{
+            color:black;
+            background-color: #f5c542;
+            display: inline;
+        }
+
+        #incorrect{
+           background-color: #38485C;
+           display: inline;
+        }
+
     </style>
 </head>
 <body>
@@ -183,9 +200,11 @@
                         <li> 
                             <strong>Search Results: </strong> After each guess, you'll be provided with color-coded feedback to help you refine your next guesses. 
                             <ul>
-                                <li>Green: Correct </li>
-                                <li>Yellow: Close! </li>
-                                <li>No color: Incorrect</li>
+                                <li id="correct">Green: Correct </li>
+                                <br>
+                                <li id="close">Yellow: Close! </li>
+                                <br>
+                                <li id="incorrect"><strong>No color: Incorrect</strong></li>
                             </ul>
                         </li>
                         <li> 
