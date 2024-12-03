@@ -58,6 +58,13 @@
         #btnDiv, #hintDiv{
             text-align: center;
         }
+
+        #playersSelect{
+            height: min-content;
+            padding: 9px;
+            margin-right: 15px;
+        }
+
     </style>
 </head>
 <body>
@@ -87,16 +94,16 @@
             <hr>
         </div>
 
-        <select name="players" id="playersSelect">
-            {% for league, players in dict_of_players.items() %}
-                {% for player in players %}
-                    <option value="{{player.name}}" id="{{player.name}}"> {{player.name}} </option>
-                {% endfor %}
-            {% endfor%}
-        </select>
 
-        <div class="search-container input-group input-wrapper hoverable-menu activated" style="padding-right: 40px; align-items: center;">
-            <input id="playerGuess" type="text" class="form-control" placeholder="Make Your Guess..." id="playerSearch">
+        <div class="search-container input-group input-wrapper hoverable-menu activated" style="margin-left: 20%; align-items: center;">
+            <select name="players" id="playersSelect">
+                <option>Search or explore players to guess</option>
+                {% for league, players in dict_of_players.items() %}
+                    {% for player in players %}
+                        <option value="{{player.name}}" id="{{player.name}}"> {{player.name}} </option>
+                    {% endfor %}
+                {% endfor%}
+            </select>
             <button class="btn btn-primary" id="searchButton">Submit Guess</button>
         </div>
     </div>
@@ -219,6 +226,7 @@
         var guesses = 0;
         var guessAllowed = 8;
         var win = false;
+        console.log("Correct Player: " + "{{guess_this_player.name}}")
         
         submitButton.addEventListener("click", function (){
             const selection = document.getElementById("playersSelect")
@@ -239,13 +247,100 @@
                             {
                                 console.log("FOUND")
                                 document.getElementById("playerName").innerHTML = "{{ player.name }}"
-                                document.getElementById("playerTeam").innerHTML = "{{ player.team }}"
-                                document.getElementById("playerGoals").innerHTML = "{{ player.goals }}"
-                                document.getElementById("playerAssists").innerHTML = "{{ player.assists }}"
-                                document.getElementById("playerLeague").innerHTML = "{{ player.league }}"
-                                document.getElementById("playerAge").innerHTML = "{{ player.age }}"
-                                document.getElementById("playerPosition").innerHTML = "{{ player.position }}"
-                                document.getElementById("playerNationality").innerHTML = "{{ player.nationality }}"
+
+                                if("{{ guess_this_player.team }}" === "{{ player.team }}"){
+                                    document.getElementById("playerTeam").innerHTML = "✔ {{ player.team }}";
+                                    document.getElementById("playerTeam").style.backgroundColor = "#6fcf6f";
+                                    document.getElementById("playerTeam").style.borderRadius = "3px";
+                                    document.getElementById("playerTeam").style.margin = "0 10px";
+                                    
+                                }else{
+                                    document.getElementById("playerTeam").innerHTML = "{{ player.team }}";
+                                }
+
+                                if("{{ guess_this_player.goals}}" === "{{ player.goals}}"){
+                                    document.getElementById("playerGoals").innerHTML = "✔ {{ player.goals }}";
+                                    document.getElementById("playerGoals").style.backgroundColor = "#6fcf6f";
+                                    document.getElementById("playerGoals").style.borderRadius = "3px";
+                                    document.getElementById("playerGoals").style.margin = "0 10px";
+
+                                }else if(Math.abs(parseInt("{{ guess_this_player.goals }}") - parseInt("{{ player.goals }}")) <= 2){
+                                    document.getElementById("playerGoals").innerHTML = "{{ player.goals }}";
+                                    document.getElementById("playerGoals").style.backgroundColor = "#f5c542"; 
+                                    document.getElementById("playerGoals").style.borderRadius = "3px";
+                                    document.getElementById("playerGoals").style.margin = "0 10px";
+
+                                }else{
+                                    document.getElementById("playerGoals").innerHTML = "{{ player.goals }}"
+                                }
+
+                                if("{{ guess_this_player.assists}}" === "{{ player.assists}}"){
+                                    document.getElementById("playerAssists").innerHTML = "✔ {{ player.assists }}";
+                                    document.getElementById("playerAssists").style.backgroundColor = "#6fcf6f";
+                                    document.getElementById("playerAssists").style.borderRadius = "3px";
+                                    document.getElementById("playerAssists").style.margin = "0 10px";
+
+                                }else if(Math.abs(parseInt("{{ guess_this_player.assists }}") - parseInt("{{ player.assists }}")) <= 2){
+                                    document.getElementById("playerAssists").innerHTML = "{{ player.assists }}";
+                                    document.getElementById("playerAssists").style.backgroundColor = "#f5c542"; 
+                                    document.getElementById("playerAssists").style.borderRadius = "3px";
+                                    document.getElementById("playerAssists").style.margin = "0 10px";
+
+                                }else{
+                                    document.getElementById("playerAssists").innerHTML = "{{ player.assists }}"
+                                }
+
+
+                                if("{{ guess_this_player.position }}" === "{{ player.position }}"){
+                                    document.getElementById("playerPosition").innerHTML = "✔ {{ player.position }}";
+                                    document.getElementById("playerPosition").style.backgroundColor = "#6fcf6f";
+                                    document.getElementById("playerPosition").style.borderRadius = "3px";
+                                    document.getElementById("playerPosition").style.margin = "0 10px";
+                                    
+                                }else{
+                                    document.getElementById("playerPosition").innerHTML = "{{ player.position }}"
+                                }
+
+                                if("{{ guess_this_player.league }}" === "{{ player.league }}"){
+                                    document.getElementById("playerLeague").innerHTML = "✔ {{ player.league }}";
+                                    document.getElementById("playerLeague").style.backgroundColor = "#6fcf6f";
+                                    document.getElementById("playerLeague").style.borderRadius = "3px";
+                                    document.getElementById("playerLeague").style.margin = "0 10px";
+                                    
+                                }else{
+                                    document.getElementById("playerLeague").innerHTML = "{{ player.league }}";
+                                }
+                                
+
+
+                                if("{{ guess_this_player.age}}" === "{{ player.age}}"){
+                                    document.getElementById("playerAge").innerHTML = "✔ {{ player.age}}";
+                                    document.getElementById("playerAge").style.backgroundColor = "#6fcf6f";
+                                    document.getElementById("playerAge").style.borderRadius = "3px";
+                                    document.getElementById("playerAge").style.margin = "0 10px";
+
+                                }else if(Math.abs(parseInt("{{ guess_this_player.age }}") - parseInt("{{ player.age }}")) <= 2){
+                                    document.getElementById("playerAge").innerHTML = "{{ player.age }}";
+                                    document.getElementById("playerAge").style.backgroundColor = "#f5c542"; 
+                                    document.getElementById("playerAge").style.borderRadius = "3px";
+                                    document.getElementById("playerAge").style.margin = "0 10px";
+
+                                }else{
+                                    document.getElementById("playerAge").innerHTML = "{{ player.age }}";
+                                }  
+                                
+                                
+
+                                if("{{ guess_this_player.nationality }}" === "{{ player.nationality }}"){
+                                    document.getElementById("playerNationality").innerHTML = "✔ {{ player.nationality }}";
+                                    document.getElementById("playerNationality").style.backgroundColor = "#6fcf6f";
+                                    document.getElementById("playerNationality").style.borderRadius = "3px";
+                                    document.getElementById("playerNationality").style.margin = "0 10px";
+                                    
+                                }else{                                    
+                                    document.getElementById("playerNationality").innerHTML = "{{ player.nationality }}";
+                                }
+                                   
                             }else
                             {
                                 const slotsContainer = document.getElementById("slotsContainer")
@@ -253,33 +348,127 @@
                                 outerDIV.setAttribute("id", `guess${guesses}`)
                                 outerDIV.setAttribute("class", "slot")
                                 slotsContainer.appendChild(outerDIV)
+
                                 const nameDIV = document.createElement("div")
                                 nameDIV.setAttribute("class", "col-3")
                                 outerDIV.appendChild(nameDIV)
+
                                 const name = document.createElement("strong")
                                 nameDIV.appendChild(name)
                                 name.innerHTML = "{{player.name}}"
+
                                 const position = document.createElement("div")
                                 position.setAttribute("class", "col-2")
-                                position.innerHTML = "{{player.position}}"
+                                
+                                if("{{ guess_this_player.position }}" === "{{ player.position }}"){
+                                    position.innerHTML = "✔ {{ player.position }}";
+                                    position.style.backgroundColor = "#6fcf6f";
+                                    position.style.borderRadius = "3px";
+                                    position.style.margin = "0 10px";
+                                    
+                                }else{
+                                    position.innerHTML = "{{ player.position }}";
+                                }
+
                                 const team = document.createElement("div")
                                 team.setAttribute("class", "col-2")
-                                team.innerHTML = "{{player.team}}"
+
+                                if("{{ guess_this_player.team }}" === "{{ player.team }}"){
+                                    team.innerHTML = "✔ {{ player.team }}";
+                                    team.style.backgroundColor = "#6fcf6f";
+                                    team.style.borderRadius = "3px";
+                                    team.style.margin = "0 10px";
+                                    
+                                }else{
+                                    team.innerHTML = "{{ player.team }}";
+                                }
+
+
+
                                 const goals = document.createElement("div")
                                 goals.setAttribute("class", "col-2")
-                                goals.innerHTML = "{{player.goals}}"
+
+                                if("{{ guess_this_player.goals}}" === "{{ player.goals}}"){
+                                    goals.innerHTML = "✔ {{ player.goals }}";
+                                    goals.style.backgroundColor = "#6fcf6f";
+                                    goals.style.borderRadius = "3px";
+                                    goals.style.margin = "0 10px";
+
+                                }else if(Math.abs(parseInt("{{ guess_this_player.goals }}") - parseInt("{{ player.goals }}")) <= 2){
+                                    goals.innerHTML = "{{ player.goals }}";
+                                    goals.style.backgroundColor = "#f5c542"; 
+                                    goals.style.borderRadius = "3px";
+                                    goals.style.margin = "0 10px";
+                                    
+                                }else{
+                                    goals.innerHTML = "{{ player.goals }}"
+                                }
+
                                 const assists = document.createElement("div")
                                 assists.setAttribute("class", "col-2")
-                                assists.innerHTML = "{{player.assists}}"
+                                
+                                if("{{ guess_this_player.assists}}" === "{{ player.assists}}"){
+                                    assists.innerHTML = "✔ {{ player.assists }}";
+                                    assists.style.backgroundColor = "#6fcf6f";
+                                    assists.style.borderRadius = "3px";
+                                    assists.style.margin = "0 10px";
+
+                                }else if(Math.abs(parseInt("{{ guess_this_player.assists }}") - parseInt("{{ player.assists }}")) <= 2){
+                                    assists.innerHTML = "{{ player.assists }}";
+                                    assists.style.backgroundColor = "#f5c542"; 
+                                    assists.style.borderRadius = "3px";
+                                    assists.style.margin = "0 10px";
+
+                                }else{
+                                    assists.innerHTML = "{{ player.assists }}"
+                                }
+
                                 const league = document.createElement("div")
                                 league.setAttribute("class", "col-2")
-                                league.innerHTML = "{{player.league}}"
+                                
+                                if("{{ guess_this_player.league }}" === "{{ player.league }}"){
+                                    league.innerHTML = "✔ {{ player.league }}";
+                                    league.style.backgroundColor = "#6fcf6f";
+                                    league.style.borderRadius = "3px";
+                                    league.style.margin = "0 10px";
+                                    
+                                }else{
+                                    league.innerHTML = "{{ player.league }}";
+                                }
+
                                 const age = document.createElement("div")
                                 age.setAttribute("class", "col-2")
-                                age.innerHTML = "{{player.age}}"
+                                
+                                if("{{ guess_this_player.age}}" === "{{ player.age}}"){
+                                    age.innerHTML = "✔ {{ player.age}}";
+                                    age.style.backgroundColor = "#6fcf6f";
+                                    age.style.borderRadius = "3px";
+                                    age.style.margin = "0 10px";
+
+                                }else if(Math.abs(parseInt("{{ guess_this_player.age }}") - parseInt("{{ player.age }}")) <= 2){
+                                    age.innerHTML = "{{ player.age }}";
+                                    age.style.backgroundColor = "#f5c542"; 
+                                    age.style.borderRadius = "3px";
+                                    age.style.margin = "0 10px";
+
+                                }else{
+                                    age.innerHTML = "{{ player.age }}";
+                                }
+
                                 const nationality = document.createElement("div")
                                 nationality.setAttribute("class", "col-2")
-                                nationality.innerHTML = "{{player.nationality}}"
+                                                                
+                                if("{{ guess_this_player.nationality }}" === "{{ player.nationality }}"){
+                                    nationality.innerHTML = "✔ {{ player.nationality }}";
+                                    nationality.style.backgroundColor = "#6fcf6f";
+                                    nationality.style.borderRadius = "3px";
+                                    nationality.style.margin = "0 10px";
+                                    
+                                }else{                                    
+                                    nationality.innerHTML = "{{ player.nationality }}";
+                                }
+
+
                                 outerDIV.appendChild(position)
                                 outerDIV.appendChild(team)
                                 outerDIV.appendChild(goals)
