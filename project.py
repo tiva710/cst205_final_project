@@ -47,8 +47,6 @@ def silohouette(src, refp):
 app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 
-hint_showing = False
-
 @app.route('/')
 
 def home(): 
@@ -60,20 +58,9 @@ def home():
 
    #IMAGE SRC HERE 
   global hint_showing
-  if hint_showing == True: 
-    hint_image = 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' 
-  else:
-     hint_image = None
+  
+  hint_image = 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' 
   return render_template ('index.html', hint_image=hint_image, guess_this_player=guess_this_player, dict_of_players=all_league_players)
-
-
-@app.route('/show_hint', methods=['POST'])
-def show_hint():
-  global hint_showing
-
-  hint_showing = not hint_showing
-
-  return redirect(url_for('home'))
  
 
 if __name__ == '__main__':
