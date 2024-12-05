@@ -92,7 +92,7 @@
 
     <!-- Feel free to change/remove the width once the Pillow image is implemented -->
 
-    <div id="hintDiv">
+    <div id="hintDiv" style="display: none;">
         {% if hint_image %}
             <img src="{{ hint_image }}" alt="Hint Silhouette" width="200">     
         {% endif %}
@@ -126,9 +126,7 @@
     </div>
 
     <div id="btnDiv">
-        <form action="/show_hint" method="POST">
-            <button id="userHint" class="btn btn-primary" type="submit" >Hint</button>
-        </form>
+        <button id="userHint" class="btn btn-primary" type="submit" >Hint</button>
     </div>
 
 
@@ -240,6 +238,18 @@
                 sessionStorage.setItem('modalShown', true);
             }
         });
+
+        const userHintButton = document.getElementById('userHint');
+        const hintDiv = document.getElementById('hintDiv');
+        
+        userHintButton.addEventListener('click', function () {
+            if (hintDiv.style.display === 'none' || hintDiv.style.display === '') {
+                hintDiv.style.display = 'block'; 
+            } else {
+                hintDiv.style.display = 'none'; 
+            }
+        });
+
 
         const submitButton = document.getElementById("searchButton")
         var guesses = 0;

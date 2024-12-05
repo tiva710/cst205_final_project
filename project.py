@@ -61,8 +61,6 @@ def download_image(url, filepath):
 app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 
-hint_showing = False
-
 @app.route('/')
 
 def home(): 
@@ -78,21 +76,9 @@ def home():
   silohouette('static/images/image.png',(255,255,255))
   
    #IMAGE SRC HERE 
-  global hint_showing
-  if hint_showing == True: 
-    hint_image = "static/images/silohouette.png"
-  else:
-     hint_image = None
+ 
+  hint_image = "static/images/silohouette.png"
   return render_template ('index.html', hint_image=hint_image, guess_this_player=guess_this_player, dict_of_players=all_league_players)
-
-
-@app.route('/show_hint', methods=['POST'])
-def show_hint():
-  global hint_showing
-
-  hint_showing = not hint_showing
-
-  return redirect(url_for('home'))
  
 
 if __name__ == '__main__':
