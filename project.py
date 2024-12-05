@@ -28,7 +28,7 @@ def color_distance(c1, c2):
 
 
 def silohouette(src, refp):
-    src = src.convert("RGBA")
+    src = Image.open(src).convert("RGBA")
     for x in range(src.width):
         for y in range(src.height):
             cur_pixel = src.getpixel((x,y))
@@ -36,7 +36,21 @@ def silohouette(src, refp):
                 src.putpixel((x,y), (255, 255, 255, 0))
             else:
                 src.putpixel((x,y), (0, 0, 0, 255))
-    src.save("silohouette.png", "PNG")
+    src.save("static/images/silohouette.png", "PNG")
+
+def download_image(url, filepath):
+    try:
+        r = requests.get(url)
+
+        # Check if the request was successful
+        if r.status_code == 200:
+            
+            # Save the image content to filepath
+            with open(filepath, 'wb') as f: 
+                f.write(r.content)
+                
+    except:
+        print("Error finding image")
 
 
 #I am assuming we will have the image generation be done once we initially get the 
@@ -57,11 +71,16 @@ def home():
     all_league_players = pickle.load(pickled_file)
   print(guess_this_player)
     
-
+  #Downloading player image the path for the raw image will always be 'static/images/image.png'
+  download_image(guess_this_player.image,'static/images/image.png')
+  
+  #Silohuette saves image as "static/images/silohouette.png"
+  silohouette('static/images/image.png',(255,255,255))
+  
    #IMAGE SRC HERE 
   global hint_showing
   if hint_showing == True: 
-    hint_image = 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' 
+    hint_image = "static/images/silohouette.png"
   else:
      hint_image = None
   return render_template ('index.html', hint_image=hint_image, guess_this_player=guess_this_player, dict_of_players=all_league_players)
