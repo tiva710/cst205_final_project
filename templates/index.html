@@ -94,7 +94,7 @@
 
     <div id="hintDiv" style="display: none;">
         {% if hint_image %}
-            <img src="{{ hint_image }}" alt="Hint Silhouette" width="200">     
+            <img id="silhouetteIMG" src="{{ hint_image }}" alt="Hint Silhouette" width="200">     
         {% endif %}
     </div>
 
@@ -256,6 +256,8 @@
         var guessAllowed = 8;
         var win = false;
         console.log("Correct Player: " + "{{guess_this_player.name}}")
+
+        const playerImage = document.getElementById("silhouetteIMG")
         
         submitButton.addEventListener("click", function (){
             const selection = document.getElementById("playersSelect")
@@ -264,6 +266,8 @@
             {
                 if (selection.value == "{{guess_this_player.name}}") 
                 {
+                    console.log(playerImage)
+                    playerImage.setAttribute("src", "{{guess_this_player.image}}")
                     console.log("YOU WIN")
                     win = true;
                 }
@@ -377,6 +381,12 @@
                                 outerDIV.setAttribute("id", `guess${guesses}`)
                                 outerDIV.setAttribute("class", "slot")
                                 slotsContainer.appendChild(outerDIV)
+
+                                const guessDIV = document.createElement("div")
+                                outerDIV.appendChild(guessDIV)
+                                const guessP = document.createElement("p")
+                                guessDIV.appendChild(guessP)
+                                guessP.innerHTML = guesses
 
                                 const nameDIV = document.createElement("div")
                                 nameDIV.setAttribute("class", "col-3")
@@ -511,6 +521,7 @@
                     "{% endfor %}"
                 "{% endfor%}"                
             }else{
+                playerImage.setAttribute("src", "{{guess_this_player.image}}")
                 console.log("OUT OF GUESSES")
             }
         })
