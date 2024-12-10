@@ -74,7 +74,6 @@ def home():
   
   #Silohuette saves image as "static/images/silohouette.png"
   silohouette('static/images/image.png',(255,255,255))
-  
    #IMAGE SRC HERE 
  
   hint_image = "static/images/silohouette.png"
@@ -83,4 +82,5 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
