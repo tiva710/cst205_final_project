@@ -549,19 +549,39 @@
             }
         })
 
-        function endGame(win){
-            if(win){
-                //winning functionality 
-                console.log("YOU WIN");
-                const modal = new bootstrap.Modal(document.getElementById('winModal'));
-                modal.show();
-            }else{
-                //losing functionality 
-                console.log("YOU LOSE");
-                const modal = new bootstrap.Modal(document.getElementById('loseModal'));
-                modal.show();
-            }
-        }
+        function endGame(win) {
+    const playerName = "{{ guess_this_player.name }}";
+    const playerTeam = "{{ guess_this_player.team }}";
+    const playerGoals = "{{ guess_this_player.goals }}";
+    const playerAssists = "{{ guess_this_player.assists }}";
+    const playerPosition = "{{ guess_this_player.position }}";
+    const playerLeague = "{{ guess_this_player.league }}";
+    const playerAge = "{{ guess_this_player.age }}";
+    const playerNationality = "{{ guess_this_player.nationality }}";
+
+    let modalBodyContent = `
+        <p><strong>Name:</strong> ${playerName}</p>
+        <p><strong>Team:</strong> ${playerTeam}</p>
+        <p><strong>Goals:</strong> ${playerGoals}</p>
+        <p><strong>Assists:</strong> ${playerAssists}</p>
+        <p><strong>Position:</strong> ${playerPosition}</p>
+        <p><strong>League:</strong> ${playerLeague}</p>
+        <p><strong>Age:</strong> ${playerAge}</p>
+        <p><strong>Nationality:</strong> ${playerNationality}</p>
+    `;
+
+    if (win) {
+        console.log("YOU WIN");
+        document.querySelector("#winModal .modal-body").innerHTML = modalBodyContent;
+        const modal = new bootstrap.Modal(document.getElementById('winModal'));
+        modal.show();
+    } else {
+        console.log("YOU LOSE");
+        document.querySelector("#loseModal .modal-body").innerHTML = modalBodyContent;
+        const modal = new bootstrap.Modal(document.getElementById('loseModal'));
+        modal.show();
+    }
+}
 
         
     </script>
