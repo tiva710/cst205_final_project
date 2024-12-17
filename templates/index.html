@@ -82,15 +82,24 @@
            display: inline;
         }
 
+        .modal-content{
+            background-color: #38485C;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px white;
+            border: 1px solid white;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .container{
+            display: flex;
+        }
     </style>
 </head>
 <body>
     <h1 class="text-center"> Soccerdle </h1>
     <br><br>
-
-    <!-- Div to display the hint img -->
-
-    <!-- Feel free to change/remove the width once the Pillow image is implemented -->
 
     <div id="hintDiv" style="display: none;">
         {% if hint_image %}
@@ -142,10 +151,6 @@
             <div class="col-2">Nationality</div>
         </div>
         
-
-        <!-- So I am invisioning a list or dictionary of user guesses (with the player data) that you can loop thorugh & display 
-        here each time a guess is made. Just because I feel like we can reuse this div setup instead of hardcoding the slots 
-        and figuring out which guess they are on -->
         <div class="slot">
             <div class="col-3">
                 <strong id="playerName"></strong>
@@ -158,8 +163,6 @@
             <div id="playerAge" class="col-2"></div>
             <div id="playerNationality" class="col-2"></div>
         </div>
-
-        <!-- <div id="guess2" class="slot"> -->
 
         </div>
     </div>
@@ -229,16 +232,20 @@
 
     <div class="modal fade" id="winModal" tabindex="-1" aria-labelledby="winModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="text-align: center;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="winModalLabel">YOU WIN!!!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <!-- Player Stats Here  -->
-                                     
-                    
+                <div class = "container">
+                    <div class="modal-body">
+                        <!-- Player Stats Here  -->                        
+                    </div>
+                    <div class="playerImg">
+
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -246,15 +253,21 @@
 
     <div class="modal fade" id="loseModal" tabindex="-1" aria-labelledby="loseModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="text-align: center;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="loseModalLabel">You Lose :(</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <!-- Player Stats Here  -->
-                    
+                <div class = "container">
+                    <div class="modal-body">
+                        <!-- Player Stats Here  -->
+                        
+                    </div>
+                    <div class="playerImg">
+                        
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -563,38 +576,42 @@
         })
 
         function endGame(win) {
-    const playerName = "{{ guess_this_player.name }}";
-    const playerTeam = "{{ guess_this_player.team }}";
-    const playerGoals = "{{ guess_this_player.goals }}";
-    const playerAssists = "{{ guess_this_player.assists }}";
-    const playerPosition = "{{ guess_this_player.position }}";
-    const playerLeague = "{{ guess_this_player.league }}";
-    const playerAge = "{{ guess_this_player.age }}";
-    const playerNationality = "{{ guess_this_player.nationality }}";
+            const playerName = "{{ guess_this_player.name }}";
+            const playerTeam = "{{ guess_this_player.team }}";
+            const playerGoals = "{{ guess_this_player.goals }}";
+            const playerAssists = "{{ guess_this_player.assists }}";
+            const playerPosition = "{{ guess_this_player.position }}";
+            const playerLeague = "{{ guess_this_player.league }}";
+            const playerAge = "{{ guess_this_player.age }}";
+            const playerNationality = "{{ guess_this_player.nationality }}";
 
-    let modalBodyContent = `
-        <p><strong>Name:</strong> ${playerName}</p>
-        <p><strong>Team:</strong> ${playerTeam}</p>
-        <p><strong>Goals:</strong> ${playerGoals}</p>
-        <p><strong>Assists:</strong> ${playerAssists}</p>
-        <p><strong>Position:</strong> ${playerPosition}</p>
-        <p><strong>League:</strong> ${playerLeague}</p>
-        <p><strong>Age:</strong> ${playerAge}</p>
-        <p><strong>Nationality:</strong> ${playerNationality}</p>
-    `;
+            let modalBodyContent = `
+                <p><strong>Name:</strong> ${playerName}</p>
+                <p><strong>Team:</strong> ${playerTeam}</p>
+                <p><strong>Goals:</strong> ${playerGoals}</p>
+                <p><strong>Assists:</strong> ${playerAssists}</p>
+                <p><strong>Position:</strong> ${playerPosition}</p>
+                <p><strong>League:</strong> ${playerLeague}</p>
+                <p><strong>Age:</strong> ${playerAge}</p>
+                <p><strong>Nationality:</strong> ${playerNationality}</p>
+            `;
 
-    if (win) {
-        console.log("YOU WIN");
-        document.querySelector("#winModal .modal-body").innerHTML = modalBodyContent;
-        const modal = new bootstrap.Modal(document.getElementById('winModal'));
-        modal.show();
-    } else {
-        console.log("YOU LOSE");
-        document.querySelector("#loseModal .modal-body").innerHTML = modalBodyContent;
-        const modal = new bootstrap.Modal(document.getElementById('loseModal'));
-        modal.show();
-    }
-}
+            if (win) {
+                console.log("YOU WIN");
+                document.querySelector("#winModal .modal-body").innerHTML = modalBodyContent;
+                document.querySelector("#winModal .playerImg").innerHTML = `<img src="/static/images/image.png"> <br> <br>
+                                                                            <button class="btn btn-primary" onClick="window.location.reload();">Play Again</button>`;
+                const modal = new bootstrap.Modal(document.getElementById('winModal'));
+                modal.show();
+            } else {
+                console.log("YOU LOSE");
+                document.querySelector("#loseModal .modal-body").innerHTML = modalBodyContent;
+                document.querySelector("#loseModal .playerImg").innerHTML = `<img src="/static/images/image.png"> <br> <br>
+                                                                            <button class="btn btn-primary" onClick="window.location.reload();">Play Again</button>`;
+                const modal = new bootstrap.Modal(document.getElementById('loseModal'));
+                modal.show();
+            }
+        }
 
         
     </script>
