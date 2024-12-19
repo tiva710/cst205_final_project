@@ -1,6 +1,9 @@
 #################
-#Header Shtuff 
-#test comment 
+# CST 205-01: Multimedia Design
+# Final Project: Soccerdle
+# A guessing game that requires the user to use previous guesses to deterimne correct soccer player
+# Ariya Briscoe, Kevin Crapo, Sebastian Echeverria, Tiva Rocco
+# Date: 12-18-2024 
 #################
 from flask import Flask, render_template, request, url_for, redirect
 from flask_bootstrap import Bootstrap5
